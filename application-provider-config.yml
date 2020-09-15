@@ -31,6 +31,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka8400.com:8400/eureka
+  instance:
+    instance-id: msc---provider-8084 #当前微服务在服务注册中心的名称
+    prefer-ip-address: true
 
 ---
 # 配置test环境
@@ -66,3 +69,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka8500.com:8500/eureka
+  instance:
+    instance-id: msc---provider-8085 #当前微服务在服务注册中心的名称
+    prefer-ip-address: true
